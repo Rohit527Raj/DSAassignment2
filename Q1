@@ -1,0 +1,46 @@
+package assignment2;
+import java.util.Scanner;
+public class Person {
+	
+	//declaring data members
+	String name;
+	int age;
+	
+	public void setData() {
+		Scanner obj = new Scanner (System.in);
+		System.out.println("enter the name: ");
+		name = obj.next();
+		System.out.println("enter age: ");
+		age= obj.nextInt();
+	}
+	public void displayData() {
+		System.out.println("name: "+name+"  age: "+age);
+	}
+
+}
+
+
+\\ create another class containing the main method.
+
+
+package assignment2;
+
+public class DemoPerson {
+
+	public static void main(String[] args) {
+		
+		Person a = new Person();
+		Person b = new Person();
+		a.name="Rohan";
+		a.age=21;
+		b.setData();
+		a.displayData();
+		b.displayData();
+		
+		
+		
+		
+
+	}
+
+}
