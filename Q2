@@ -1,0 +1,27 @@
+package assignment2;
+import java.util.Scanner;
+public class Complex {
+
+	double real;
+	double imag;
+	
+	public void setData() {
+		Scanner obj = new Scanner(System.in);
+		System.out.println("enter real part: ");
+		real = obj.nextDouble();
+		System.out.println("enter imaginary part");
+		imag = obj.nextDouble();
+	}
+	public void display() {
+		System.out.println("complex form is: "+real+"+"+imag+"j");
+	}
+	
+	public Complex add(Complex a,Complex b) {
+		
+		Complex sum = new Complex();
+		sum.real = a.real+b.real;
+		sum.imag = a.imag+b.imag;
+		return sum;
+		
+	}
+}
